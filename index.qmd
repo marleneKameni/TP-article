@@ -45,7 +45,7 @@ execute:
   # Show warnings
   warning: false
   # Cache code results
-  cache: false
+  cache: true
 # Template specific
 journalinfo: "Publication reference"
 archive: "DOI: xxx/xx"
@@ -126,7 +126,9 @@ La diversité des forêts tropicales fascine les écologues en raison de son imp
 La théorie biogéographique des îles propose que la richesse spécifique résulte d’un équilibre dynamique entre immigration et extinction, cette dernière étant notamment influencée par la taille des habitats [@MacArthur1967]. Dans cette perspective, la diversité d’une forêt peut également dépendre de son histoire et des perturbations qu’elle a subies. La forêt de BCI, notamment, est une forêt secondaire issue de perturbations passées [@Raby2017]. Sa diversité pourrait ainsi être favorisée par un niveau intermédiaire de perturbation, conformément à l’hypothèse de la perturbation intermédiaire proposée par Connell [@Connell1978].
 
 # matériel et méthodes
+
 ## présentation du site de paracou
+
 ```{r}
 #|label: paracou
 library("tidyverse")
@@ -134,6 +136,7 @@ paracou6 <- read_csv2("data/Paracou6.csv")
 ```
 
 ## présentation du site de BCI
+
 ```{r}
 #|label: vegan
 library("vegan")
@@ -178,5 +181,11 @@ paracou6 %>%
 ```
 
 # Discussion
+Les profils de diversité de Hill montrent que Paracou présente une diversité supérieure à BCI, avec une différence particulièrement importante pour \(q=0\), correspondant à la richesse spécifique. Cela montre que Paracou possède un nombre d’espèces nettement plus élevé. Cette forte diversité illustre la complexité des communautés des forêts tropicales, dont les mécanismes de maintien restent difficiles à expliquer [@Gibson2011; @Wright2002b].
+
+Lorsque \(q\) augmente, l’écart entre les deux forêts diminue : les espèces rares ont alors moins d’influence et les espèces abondantes davantage. Les deux communautés apparaissent donc plus proches lorsque l’on se concentre sur les espèces dominantes. Ces différences peuvent être liées à différents processus écologiques, notamment ceux d’immigration et d’extinction décrits par la théorie de la biogéographie insulaire [@MacArthur1967].
+
+BCI étant une forêt secondaire [@Raby2017], ses perturbations passées pourraient également avoir influencé sa diversité. La théorie de la perturbation intermédiaire propose notamment qu’un niveau intermédiaire de perturbation puisse favoriser la coexistence des espèces [@Connell1978]. Cependant, notre comparaison entre seulement deux sites ne permet pas de tester directement cette hypothèse. Ces résultats montrent ainsi l’intérêt d’étudier plusieurs composantes de la diversité pour mieux comprendre les forêts tropicales [@Liang2022].
 
 # conclusion
+La comparaison des profils de diversité de Hill met en évidence une diversité nettement plus élevée à Paracou qu’à BCI, principalement en termes de richesse spécifique. Cette différence s’atténue lorsque l’importance accordée aux espèces abondantes augmente, suggérant que les deux forêts présentent des communautés plus proches en termes de structure des espèces dominantes. Ces résultats soulignent ainsi l’importance de considérer plusieurs composantes de la diversité plutôt que la seule richesse spécifique pour comparer les communautés forestières tropicales.
