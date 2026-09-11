@@ -1,5 +1,5 @@
 ---
-title: "Demo Stylish Article"
+title: "Analyse de la diversité dans les parcelles de Paracou et de la Barro Colorado Island (BCI) "
 # Output formats
 format:
   stylisharticle-pdf:
@@ -12,21 +12,21 @@ format:
     css: colors.css
 # Authors (https://quarto.org/docs/journals/authors.html#author-schema)
 author:
-  - name: John Doe
+  - name: Kameni Marlène
     affiliations:
-      - name: Dummy Organization
-        department: Scientific Department
-        address: Somewhere
-        city: City
-        country: Country
-        postal-code: 9999
+      - name:AgroParisTech
+        department: Biologie, Ecologie et Evolution
+        address: 34090, Rue Jean François Breton
+        city: Montpellier
+        country: France
+        postal-code: 34000
     orcid: 0000-0000-0000-0000
-    email: JD@example.org
+    email: marlenedhaliak@gmail.com
     url: https://example.org/
 # Abstract and Keywords
 abstract: |
-  This document is only a demo explaining how to use the Stylish Article template.
-keywords: [template, demo]
+cet article a pour but de montrer les différences entre la diversité que l'on rencontre dans les parcelles de Paracou et celle que l'on rencontre à la Barro Colorado Island (BCI). L'analyse du graphique permet de bien mettre en évidence cette différence.  
+keywords: [Diversité, perturbation, nombre d'Hill]
 # Bibliography
 reference-section-title: References
 bibliography: references.bib
@@ -135,6 +135,8 @@ La théorie biogéographie des îles propose que la richesse spécifique résult
 La station de Paracou, située près de Sinnamary, est une forêt tropicale humide de basse altitude caractérisée par un climat équatorial et une forte pluviométrie.
 Elle comprend plusieurs parcelles suivies depuis plusieurs décennies par le CIRAD.
 
+![This is my caption](images/7ff090e0a435-Mosaique-Paracou.jpg){fig-align="center"}
+
 ```{r}
 #|label: paracou
 library("tidyverse")
@@ -146,6 +148,8 @@ paracou6 <- read_csv2("data/Paracou6.csv")
 La station de Barro Colorado Island (BCI) se situe au Panama, dans une forêt tropicale humide à saison sèche marquée.
 La parcelle forestière de 50 ha est suivie depuis 1980, avec un inventaire régulier des arbres.
 Ce suivi à long terme permet d’étudier la diversité, la dynamique et la distribution spatiale des communautés végétales.
+
+![This is ma caption 2](images/magery-at-different-resolutions-over-Barro-Colorado-Island-Panama-from-a-b-satellite.webp)
 
 ```{r}
 #|label: vegan
