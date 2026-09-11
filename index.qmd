@@ -166,6 +166,8 @@ BCI %>%
 Dans le cadre de ce travail, l’analyse porte sur la comparaison de la diversité des communautés végétales de Paracou et de BCI (Barro Colorado Island).
 Les analyses sont réalisées avec le logiciel RStudio.
 
+# Resultats
+
 Les profils de diversité de Hill ont étés calculés pour les deux forêts avec la fonction profile_hill().
 Cette approche permet d’étudier la diversité pour différents ordres (q), depuis la richesse spécifique jusqu’à une diversité davantage influencée par les espèces abondantes.
 500 simulations sont réalisées afin d’estimer l’incertitude autour des profils de diversité.
