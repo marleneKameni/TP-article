@@ -198,7 +198,7 @@ paracou6 %>%
 
 Les profils de diversité de Hill montrent que Paracou présente une diversité supérieure à BCI, avec une différence particulièrement importante pour (q=0), correspondant à la richesse spécifique.
 Cela montre que Paracou possède un nombre d’espèces nettement plus élevé.
-Cette forte diversité illustre la complexité des communautés des forêts tropicales, dont les mécanismes de maintien restent difficiles à expliquer [@Gibson2011; @Wright2002b].
+Cette forte diversité illustre la complexité des communautés des forêts tropicales, dont les mécanismes de maintien restent difficiles à expliquer [@Gibson2011; @Wright2002b]
 
 Lorsque (q) augmente, l’écart entre les deux forêts diminue : les espèces rares ont alors moins d’influence et les espèces abondantes davantage.
 Les deux communautés apparaissent donc plus proches lorsque l’on se concentre sur les espèces dominantes.
