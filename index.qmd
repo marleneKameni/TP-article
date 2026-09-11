@@ -12,21 +12,21 @@ format:
     css: colors.css
 # Authors (https://quarto.org/docs/journals/authors.html#author-schema)
 author:
-  - name: Kameni Marlène
+  - name: Kameni Marlene
     affiliations:
-      - name:AgroParisTech
-        department: Biologie, Ecologie et Evolution
-        address: 34090, Rue Jean François Breton
+      - name: Agroparistech
+        department: Biologie ecologie et evolution
+        address: Rue Jean francois breton
         city: Montpellier
         country: France
-        postal-code: 34000
+        postal-code: "34090"
     orcid: 0000-0000-0000-0000
     email: marlenedhaliak@gmail.com
     url: https://example.org/
 # Abstract and Keywords
 abstract: |
-cet article a pour but de montrer les différences entre la diversité que l'on rencontre dans les parcelles de Paracou et celle que l'on rencontre à la Barro Colorado Island (BCI). L'analyse du graphique permet de bien mettre en évidence cette différence.  
-keywords: [Diversité, perturbation, nombre d'Hill]
+  Cet article a pour but de montrer les différences entre la diversité que l'on rencontre dans les parcelles de Paracou et celle que l'on rencontre à la Barro Colorado Island (BCI). L'analyse du graphique permet de bien mettre en évidence cette différence.
+keywords: [Diversite, perturbation, nombre d'Hill]
 # Bibliography
 reference-section-title: References
 bibliography: references.bib
@@ -122,11 +122,14 @@ set.seed(973)
 
 # Introduction
 
-La diversité des forêts tropicales fascine les écologues en raison de son importance écologique et de la complexité des mécanismes qui la déterminent [@Gibson2011 ; @Wright2002b].
+La diversité des forêts tropicales fascine les écologues en raison de son importance écologique et de la complexité des mécanismes qui la déterminent [@Gibson2011; @Wright2002b].
 De nombreux modèles ont ainsi été développés pour tenter d’expliquer et de prédire les variations de diversité au sein de ces écosystèmes [@Liang2022].
 Dans un contexte de menaces croissantes sur la biodiversité, mieux comprendre la diversité des forêts tropicales, y compris dans des sites largement étudiés, reste donc essentiel [@Fadrique2026].
 
-La théorie biogéographie des îles propose que la richesse spécifique résulte d’un équilibre dynamique entre immigration et extinction, cette dernière étant notamment influencée par la taille des habitats \[@MacArthur1967\]. Dans cette perspective, la diversité d’une forêt peut également dépendre de son histoire et des perturbations qu’elle a subies. La forêt de BCI, notamment, est une forêt secondaire issue de perturbations passées \[@Raby2017\]. Sa diversité pourrait ainsi être favorisée par un niveau intermédiaire de perturbation, conformément à l’hypothèse de la perturbation intermédiaire proposée par Connell \[@Connell1978\].
+La théorie biogéographie des îles propose que la richesse spécifique résulte d’un équilibre dynamique entre immigration et extinction, cette dernière étant notamment influencée par la taille des habitats [@MacArthur1967].
+Dans cette perspective, la diversité d’une forêt peut également dépendre de son histoire et des perturbations qu’elle a subies.
+La forêt de BCI, notamment, est une forêt secondaire issue de perturbations passées [@Raby2017].
+Sa diversité pourrait ainsi être favorisée par un niveau intermédiaire de perturbation, conformément à l’hypothèse de la perturbation intermédiaire proposée par Connell [@Connell1978].
 
 # matériel et méthodes
 
@@ -169,6 +172,10 @@ BCI %>%
 
 Dans le cadre de ce travail, l’analyse porte sur la comparaison de la diversité des communautés végétales de Paracou et de BCI (Barro Colorado Island).
 Les analyses sont réalisées avec le logiciel RStudio.
+
+nombre d'hill
+
+profile de diversité
 
 # Resultats
 
