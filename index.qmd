@@ -179,13 +179,9 @@ profile de diversité
 
 # Resultats
 
-Les profils de diversité de Hill ont étés calculés pour les deux forêts avec la fonction profile_hill().
-Cette approche permet d’étudier la diversité pour différents ordres (q), depuis la richesse spécifique jusqu’à une diversité davantage influencée par les espèces abondantes.
-500 simulations sont réalisées afin d’estimer l’incertitude autour des profils de diversité.
-
-Les deux forêts sont distinguées par leur couleur et leur type de ligne, et les enveloppes de confiance permettent de comparer leurs profils de diversité selon l’ordre (q) tel que le présente la figure ci-dessous :
-
+::: {#profils}
 ```{r}
+ggtheme_set
 paracou6 %>% 
   # Vecteur des noms d'espèce de chaque arbre
   pull(spName) %>% 
@@ -203,7 +199,17 @@ paracou6 %>%
   autoplot() +
   # Titre de la légende
   labs(color = "Forêt", linetype = "Forêt")
+# supprimer les cartouches
+theme(legend.position = "none")
 ```
+Profils de diversité de paracou 6 (courbe bleu et BCI (courbe rouge). la figure represente le nombre effectif d'espèce (nombre d'hill) en fonctions du nombre de grandeur.
+:::
+
+Les profils de diversité de Hill ont étés calculés pour les deux forêts avec la fonction profile_hill().
+Cette approche permet d’étudier la diversité pour différents ordres (q), depuis la richesse spécifique jusqu’à une diversité davantage influencée par les espèces abondantes.
+500 simulations sont réalisées afin d’estimer l’incertitude autour des profils de diversité.
+
+Les deux forêts sont distinguées par leur couleur et leur type de ligne, et les enveloppes de confiance permettent de comparer leurs profils de diversité selon l’ordre (q) tel que le présente la figure ci-dessous 
 
 # Discussion
 
