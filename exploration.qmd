@@ -37,7 +37,8 @@ paracou6 %>%
   # Fixed coordinates for a map
   coord_fixed() + 
   # Color selection
-  scale_color_brewer(palette = "Set1") +
+  scale_color_manual(values = c("green", "yellow"))
+  # scale_color_brewer(palette = "Set1") +
   # Polish the text
   labs(
     x = "X", 
@@ -117,11 +118,12 @@ paracou6 %>%
   # Nom des sites
   mutate(site = c("Paracou", "BCI")) %>% 
   # Profil de diversité avec enveloppe de confiance
-  profile_hill(n_simulations = 10) %>% 
+  profile_hill(n_simulations = 500) %>% 
   # Figure
   autoplot() +
   # Titre de la légende
   labs(color = "Forêt", linetype = "Forêt")
+  # Elle prend les données d’abondance des espèces de Paracou et de   # BCI, calcule leur profil de diversité de Hill, puis compare les   # deux forêts sur un graphique.
 ```
 
 ## Références pour l'introduction et la discussion
